@@ -56,7 +56,9 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173", 
 ]
-
+ALLOWED_HOSTS = [
+    'shiny-system-production.up.railway.app',
+    ]
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
