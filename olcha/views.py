@@ -1,4 +1,6 @@
+from django.shortcuts import render
 from rest_framework import viewsets
+
 from .models import Swiper1, Swiper2, Product, Category
 from .serializers import Swiper1Serializer, Swiper2Serializer, ProductSerializer, CategorySerializer
 
