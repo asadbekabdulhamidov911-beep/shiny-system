@@ -12,5 +12,5 @@ router.register('category', views.CategoryViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
-    path('', index.view, name='index'),
+    path('', views.index, name='index'),
 ]
