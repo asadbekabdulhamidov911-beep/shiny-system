@@ -1,3 +1,5 @@
+from operator import index
+
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from . import views
@@ -9,5 +11,6 @@ router.register('product', views.ProductViewSet)
 router.register('category', views.CategoryViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
+    path('', index.view, name='index'),
 ]
